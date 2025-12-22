@@ -1,0 +1,40 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "spacing": 4,
+    "modules-left": ["custom/smile", "hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "tray"],
+
+    "custom/smile": {
+        "format": " 📻 ",
+        "on-click": "wofi --show drun",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "default": "○",
+            "active": "●",
+            "urgent": "!"
+        }
+    },
+
+    "clock": {
+        "format": "{:%H:%M | %A}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% 🔊",
+        "format-muted": "🔇",
+        "on-click": "pavucontrol"
+    },
+
+    "cpu": {
+        "format": "{usage}% ⚙️"
+    }
+}
