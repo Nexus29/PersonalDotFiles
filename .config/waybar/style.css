@@ -1,0 +1,48 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Garamond", "JetBrainsMono Nerd Font", serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+window#waybar {
+    /* Dark ebony background with a subtle red tint */
+    background: rgba(14, 14, 14, 0.95);
+    border-bottom: 3px solid #8E0101; /* The "Blood Red" border */
+    color: #E3B448; /* Alastor's Gold Accent */
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: #4D0000; /* Dark faded red for inactive */
+    transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+    color: #8E0101;
+    text-shadow: 0px 0px 8px #8E0101; /* Demonic glow effect */
+    border-top: 2px solid #8E0101;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#clock, #cpu, #memory, #pulseaudio, #custom-smile {
+    padding: 0 15px;
+    background: transparent;
+}
+
+/* Make the Radio icon stand out */
+#custom-smile {
+    font-size: 18px;
+    color: #8E0101;
+    border-right: 1px solid #2B2B2B;
+}
+
+/* Gradient effect for the clock to look like an old dial */
+#clock {
+    color: #E3B448;
+    background: linear-gradient(0deg, rgba(142,1,1,0.1) 0%, rgba(14,14,14,0) 100%);
+}
