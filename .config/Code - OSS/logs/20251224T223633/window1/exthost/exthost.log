@@ -1,0 +1,12 @@
+2025-12-24 22:36:35.575 [info] Extension host with pid 6448 started
+2025-12-24 22:36:35.575 [info] Skipping acquiring lock for /home/nexus/.config/Code - OSS/User/workspaceStorage/241e694533d45ea00ce835d9c784e15c.
+2025-12-24 22:36:35.679 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-12-24 22:36:35.711 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-12-24 22:36:35.825 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-12-24 22:36:35.838 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-12-24 22:36:35.897 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-12-24 22:36:36.018 [info] Eager extensions activated
+2025-12-24 22:36:36.021 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-12-24 22:36:36.023 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-12-24 22:37:24.951 [info] Extension host terminating: renderer closed the MessagePort
+2025-12-24 22:37:24.960 [info] Extension host with pid 6448 exiting with code 0

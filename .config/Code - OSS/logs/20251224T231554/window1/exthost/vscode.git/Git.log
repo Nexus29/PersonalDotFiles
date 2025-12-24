@@ -1,0 +1,60 @@
+2025-12-24 23:15:58.791 [info] [main] Log level: Info
+2025-12-24 23:15:58.791 [info] [main] Validating found git in: "git"
+2025-12-24 23:15:58.791 [info] [main] Using git "2.52.0" from "git"
+2025-12-24 23:15:58.791 [info] [Model][doInitialScan] Initial repository scan started
+2025-12-24 23:15:58.791 [info] > git rev-parse --show-toplevel [6ms]
+2025-12-24 23:15:58.794 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [5ms]
+2025-12-24 23:15:58.805 [info] [Model][openRepository] Opened repository (path): /home/nexus/Desktop/PersonalDotFiles
+2025-12-24 23:15:58.805 [info] [Model][openRepository] Opened repository (real path): /home/nexus/Desktop/PersonalDotFiles
+2025-12-24 23:15:58.805 [info] [Model][openRepository] Opened repository (kind): repository
+2025-12-24 23:15:58.819 [info] > git rev-parse --show-toplevel [3ms]
+2025-12-24 23:15:58.819 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-12-24 23:15:58.820 [info] > git config --get commit.template [8ms]
+2025-12-24 23:15:58.827 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-12-24 23:15:58.832 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nexus/Desktop/PersonalDotFiles/.git/refs/remotes/origin/main'
+2025-12-24 23:15:58.833 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-12-24 23:15:58.841 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-12-24 23:15:58.853 [info] > git status -z -uall [17ms]
+2025-12-24 23:15:58.878 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-12-24 23:15:58.882 [info] > git config --get --local branch.main.vscode-merge-base [1ms]
+2025-12-24 23:15:58.882 [warning] [Git][config] git config failed: Failed to execute git
+2025-12-24 23:15:58.885 [info] > git config --get commit.template [8ms]
+2025-12-24 23:15:58.889 [info] > git reflog main --grep-reflog=branch: Created from *. [4ms]
+2025-12-24 23:15:58.892 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-12-24 23:15:58.895 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nexus/Desktop/PersonalDotFiles/.git/refs/remotes/origin/main'
+2025-12-24 23:15:58.895 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [4ms]
+2025-12-24 23:15:58.898 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [1ms]
+2025-12-24 23:15:58.901 [info] > git rev-parse refs/remotes/origin/main [6ms]
+2025-12-24 23:15:58.909 [info] > git config --add --local branch.main.vscode-merge-base origin/main [8ms]
+2025-12-24 23:15:58.910 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms] (cancelled)
+2025-12-24 23:15:58.920 [info] > git status -z -uall [15ms] (cancelled)
+2025-12-24 23:15:58.921 [info] > git config --get commit.template [2ms]
+2025-12-24 23:15:58.926 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-12-24 23:15:58.928 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nexus/Desktop/PersonalDotFiles/.git/refs/remotes/origin/main'
+2025-12-24 23:15:58.929 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-12-24 23:15:58.936 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-12-24 23:15:58.949 [info] > git status -z -uall [16ms]
+2025-12-24 23:15:58.962 [info] > git merge-base refs/heads/main refs/remotes/origin/main [7ms]
+2025-12-24 23:15:58.968 [info] > git diff --name-status -z --diff-filter=ADMR --find-renames=50% 2bc15f33a42a9c65b7d57de3547e03712a4dcd24...refs/remotes/origin/main -- [2ms]
+2025-12-24 23:15:58.969 [info] > git merge-base refs/heads/main refs/remotes/origin/main [8ms]
+2025-12-24 23:15:58.973 [info] > git diff --name-status -z --diff-filter=ADMR --find-renames=50% 2bc15f33a42a9c65b7d57de3547e03712a4dcd24...refs/remotes/origin/main -- [1ms]
+2025-12-24 23:15:59.339 [info] > git check-ignore -v -z --stdin [5ms]
+2025-12-24 23:16:00.009 [info] > git config --get commit.template [13ms]
+2025-12-24 23:16:00.011 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-12-24 23:16:00.021 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nexus/Desktop/PersonalDotFiles/.git/refs/remotes/origin/main'
+2025-12-24 23:16:00.024 [info] > git rev-parse refs/remotes/origin/main [3ms]
+2025-12-24 23:16:00.046 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-12-24 23:16:00.067 [info] > git status -z -uall [34ms]
+2025-12-24 23:16:00.849 [info] > git check-ignore -v -z --stdin [4ms]
+2025-12-24 23:16:10.825 [info] > git config --get commit.template [4ms]
+2025-12-24 23:16:10.826 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-12-24 23:16:10.830 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nexus/Desktop/PersonalDotFiles/.git/refs/remotes/origin/main'
+2025-12-24 23:16:10.832 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-12-24 23:16:10.844 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-12-24 23:16:10.868 [info] > git status -z -uall [32ms]
+2025-12-24 23:16:18.074 [info] > git config --get commit.template [4ms]
+2025-12-24 23:16:18.076 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-12-24 23:16:18.080 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nexus/Desktop/PersonalDotFiles/.git/refs/remotes/origin/main'
+2025-12-24 23:16:18.081 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-12-24 23:16:18.091 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-12-24 23:16:18.104 [info] > git status -z -uall [19ms]

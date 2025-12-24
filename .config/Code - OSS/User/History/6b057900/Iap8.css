@@ -1,0 +1,71 @@
+/* Alastor "Radio Demon" Theme */
+* {
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background-color: rgba(17, 0, 0, 0.85); /* Deep shadow red-black */
+    border-bottom: 3px solid rgba(175, 0, 0, 1); /* Blood red underline */
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* Rounded modules to match your window config */
+#workspaces,
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#battery,
+#tray {
+    background-color: rgba(175, 0, 0, 0.1); /* Subtle red tint */
+    padding: 0 12px;
+    margin: 4px 2px;
+    border: 1px solid rgba(175, 0, 0, 0.5); /* Blood red border */
+    border-radius: 12px; /* Matching your 12px window rounding */
+}
+
+/* Workspace styling */
+#workspaces button {
+    padding: 0 5px;
+    color: #555555;
+}
+
+#workspaces button.active {
+    color: #ff0000; /* Brightest red for active */
+    border-bottom: 2px solid #af0000;
+}
+
+#workspaces button:hover {
+    background: rgba(175, 0, 0, 0.4);
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+/* Specific module colors */
+#clock {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #110000;
+        color: #ff0000;
+    }
+}

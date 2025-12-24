@@ -1,0 +1,10 @@
+2025-12-24 23:15:56.345 [info] Extension host with pid 5335 started
+2025-12-24 23:15:56.345 [info] Skipping acquiring lock for /home/nexus/.config/Code - OSS/User/workspaceStorage/c47d98e738e00562410eaa8d16618892.
+2025-12-24 23:15:56.365 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-12-24 23:15:56.396 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-12-24 23:15:56.441 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-12-24 23:15:56.468 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-12-24 23:15:56.546 [info] Eager extensions activated
+2025-12-24 23:15:56.548 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-12-24 23:15:56.551 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-12-24 23:15:58.661 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github

@@ -1,0 +1,39 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 34,
+    "spacing": 4,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock#radio"], // Custom Radio Clock
+    "modules-right": ["pulseaudio", "cpu", "memory", "battery"],
+
+    "hyprland/workspaces": {
+        "format": "{name} ", // Number + Microphone icon
+        "on-click": "activate"
+    },
+
+    "clock#radio": {
+        "format": "ON AIR: {:%H:%M}", // Radio station style
+        "format-alt": " BROADCASTING: {:%A, %d}",
+        "tooltip-format": "<big>Radio Demon Schedule</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "pulseaudio": {
+        "format": "{volume}%", // Gramophone/Speaker icon
+        "format-muted": "",
+        "on-click": "pavucontrol"
+    },
+
+    "cpu": {
+        "format": "{usage}%" // Static/Electric bolt icon
+    },
+
+    "memory": {
+        "format": "{percentage}%" // Brain icon
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    }
+}
