@@ -125,3 +125,5 @@ I am always looking to refine the Radio Demon experience! If you use these confi
 * **Giovanni Pio Lancellotta** - [Nexus29](https://github.com/Nexus29)
 * `42 Student ID:` **glancell**
 * `Personal Website:` *Coming Soon!*
+<!-- check:
+comm -3 <(pacman -Qq | sort) <(sed -E 's/\+\] //g; s/ .*//g' InstalledList.txt | sort) -->
